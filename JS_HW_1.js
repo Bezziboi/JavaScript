@@ -61,11 +61,13 @@ let age_1 = 10
 let age_2 = 18
 let age_3 = 60
 
-//Create an if in which you will check the value of the variable age_1
-//If age_1 < age_2, print to console “You don’t have access cause your age is” + age_1 + “It’s less then”
-//If age_1 >= age_2 and age_1 < age_3, output “Welcome!”
-//If age_1 > age_3, output “Keep calm and look Culture channel” to the console
-//Otherwise print "Technical work"
+/*
+Create an if in which you will check the value of the variable age_1
+If age_1 < age_2, print to console “You don’t have access cause your age is” + age_1 + “It’s less then”
+If age_1 >= age_2 and age_1 < age_3, output “Welcome!”
+If age_1 > age_3, output “Keep calm and look Culture channel” to the console
+Otherwise print "Technical work"
+*/
 if(age_1 < age_2) { 
     console.log("You don't have access cause your age is " + age_1 + " It's less then " + age_2) 
 }
