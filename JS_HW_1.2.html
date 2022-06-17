@@ -1,0 +1,26 @@
+<!-- Convert task 3* in such a way that the age is entered using the prompt function in the linked layout -->
+<!DOCTYPE html>
+<html>
+   <head>
+   </head>
+   <body>
+      <script>
+	  let age = +prompt("Write your age");
+	   function func() {
+	if (age < 0 || !age || isNaN(age) || age ==true || age ==false) {
+        alert("Invalid input");
+    } 
+    else if (age < 18) {
+        alert("You don't have access cause your age is " + age + " It's less then " + 18);
+    } 
+    else if (age >= 18 && age < 61) {
+        alert("Welcome !");
+    } 
+    else if (age > 61) {
+        alert("Keep calm and look Culture channel");
+    }
+    }
+func(age);
+	  </script>
+   </body>
+</html>

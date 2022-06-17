@@ -20,7 +20,7 @@ Output to the console the result of the function with ages 17, 18, 61
 
     const checkAge1 = function(age){
 if(age < 18) { 
-    console.log("You don't have access 'cause your age is " + age + " It's less than " + 18) 
+    console.log("You don't have access 'cause your age is " + age + " It's less than " + 18)
 }
 else if (age >= 18 && age < 61) {
     console.log("Welcome !")
@@ -74,7 +74,7 @@ was skipped when converted to a number
 */
 
     const checkAge3 = function(age){
-    if (isNaN(age) || age ==true || age ==false) {
+    if (!age || isNaN(age) || age ==true || age ==false) {
     console.log("Invalid input")
     }
     else if(age < 18) { 
