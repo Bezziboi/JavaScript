@@ -8,10 +8,10 @@ The number 15 is evenly divisible by 3 and 5 -- an example of a message in the c
 
 for (let a = 1; a <= 100; a++) {
     if (a % 3 == 0 && a % 5 == 0) {
-        console.log("Number", a, "- делится без остатка и на 3 и на 5")
+        console.log("Number", a, "- divisible without remainder by both 3 and 5")
     } else if (a % 3 == 0) {
-        console.log("Number", a, "- делится без остатка на 3")
+        console.log("Number", a, "- divisible without remainder by 3")
     } else if (a % 5 == 0) {
-        console.log("Number", a, "- делится без остатка на 5")
+        console.log("Number", a, "- divisible without remainder by 5")
     }
 }
