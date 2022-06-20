@@ -75,7 +75,7 @@ was skipped when converted to a number
 
     const checkAge3 = function(age){
         age = Number(age)
-    if (!age || !isNaN(age)) {
+    if (!isNaN(age)) {
     console.log("Invalid input")
     }
     else if(age < 18) { 
