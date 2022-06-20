@@ -74,6 +74,7 @@ was skipped when converted to a number
 */
 
     const checkAge3 = function(age){
+        age = Number(age)
     if (!age || isNaN(age) || age ==true || age ==false) {
     console.log("Invalid input")
     }
@@ -95,3 +96,4 @@ was skipped when converted to a number
     checkAge3(17)
     checkAge3(18)
     checkAge3(61)
+    checkAge3(0)
