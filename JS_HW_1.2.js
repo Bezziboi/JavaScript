@@ -81,7 +81,7 @@ was skipped when converted to a number
         console.log("You don't have access 'cause your age is " + age + " It's less than " + 18) 
     }
     else if (age >= 18 && age < 61) {
-        console.log("Welcome !")
+        console.log("Welcome!")
     }
     else if (age > 60) {
         console.log("Keep calm and look Culture channel")
