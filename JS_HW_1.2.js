@@ -75,14 +75,14 @@ was skipped when converted to a number
 
     const checkAge3 = function(age){
         age = Number(age)
-    if (age && !isNaN(age)) {
-        if (age < 18){  
-            console.log("You don't have access 'cause your age is " + age + " It's less than " + 18) 
+    if (age && !isNaN(age) && age != true && age != false) {
+        if (age < 18) {  
+            console.log("You don't have access 'cause your age is " + age + " It's less than " + 18)
         }
-        else if (age >= 18 && age < 61) {
+        else if (age >= 18 && age < 60) {
             console.log("Welcome!")
         }
-        else  (age > 60); {
+        else if (age > 60) {
             console.log("Keep calm and look Culture channel")
         }
         }
