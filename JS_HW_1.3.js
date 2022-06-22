@@ -10,7 +10,7 @@ for (let a = 1; a <= 100; a++) {
     if (a % 3 == 0 && a % 5 == 0) {
         console.log("Number", a, "- divisible without remainder by both 3 and 5")
     } else if (a % 3 == 0) {
-        console.log("Number ", a, "- divisible without remainder by 3")
+        console.log("Number", a, "- divisible without remainder by 3")
     } else if (a % 5 == 0) {
         console.log("Number", a, "- divisible without remainder by 5")
     }
