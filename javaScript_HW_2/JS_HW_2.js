@@ -38,7 +38,7 @@ function printSmile(line, numberOfRows) {
     console.log(line.repeat(j));
   }
 }
-printSmile(':)', 5)
+printSmile(':)', 5);
 
 //3**.  Write a function that takes a word as input. The task of the function is to calculate and output to the console how many vowels and how many consonants are in the word.
 //e.g. function getWordStructure(word)
