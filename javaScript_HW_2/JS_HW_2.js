@@ -30,8 +30,8 @@ for (j = 1; j <= 5; j++) {
 }
 
 
-// //2*. Convert task 2 into a function that takes a string as input, which will be output to the console (as in the smiley condition), as well as the number of lines to output
-// //e.g. function printSmile(line, numberOfRows)
+//2*. Convert task 2 into a function that takes a string as input, which will be output to the console (as in the smiley condition), as well as the number of lines to output
+//e.g. function printSmile(line, numberOfRows)
 
 function printSmile(line, numberOfRows) {
   for (j = 1; j <= numberOfRows; j++) {
