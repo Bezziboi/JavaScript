@@ -43,26 +43,26 @@ printSmile(':)', 5)
 //3**.  Write a function that takes a word as input. The task of the function is to calculate and output to the console how many vowels and how many consonants are in the word.
 //e.g. function getWordStructure(word)
 //In console: 
-//Слово (word) состоит из  (число) гласных и (число) согласных букв
-//Проверки: 'case', 'Case', 'Check-list'
+//The word (word) consists of (number) vowels and (number) consonants
+//Checks: 'case', 'Case', 'Check-list'
 
 function getWordStructure(word) {
   let w = word.toLowerCase().split('');
   let vowel = 'aeiou';
   let cons = 'bcdfghjklmnpqrstvwxyz';
-  let vСount = 0;
-  let cСount = 0;
+  let vowelСount = 0;
+  let consonantСount = 0;
 
   for (let x = 0; x < w.length; x++) {
     if (vowel.indexOf(w[x]) !== -1) {
-      vСount++;
+      vowelСount++;
     }
     if (cons.indexOf(w[x]) !== -1) {
-      cСount++;
+        consonantСount++;
     }
 
   }
-  return (`${vСount} + ${cСount}`);
+  return (`The word '${word}' consists of ${vowelСount} vowels and ${consonantСount} consonants`);
 
 }
 console.log(getWordStructure('case'));
