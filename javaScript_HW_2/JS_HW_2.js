@@ -30,19 +30,19 @@ for (j = 1; j <= 5; j++) {
 }
 
 
-// //2*. Преобразовать 2 задачу в функцию, принимающую на вход строку, которая и будет выводиться в консоль (как в условии смайлик), а также количество строк для вывода 
-// //e.g. function printSmile(stroka, numberOfRows)
+// //2*. Convert task 2 into a function that takes a string as input, which will be output to the console (as in the smiley condition), as well as the number of lines to output
+// //e.g. function printSmile(line, numberOfRows)
 
-function printSmile(stroka, numberOfRows) {
+function printSmile(line, numberOfRows) {
   for (j = 1; j <= numberOfRows; j++) {
-    console.log(stroka.repeat(j));
+    console.log(line.repeat(j));
   }
 }
 printSmile(':)', 5)
 
-//3**.  Написать функцию, которая принимает на вход слово. Задача функции посчитать и вывести в консоль, сколько в слове гласных, и сколько согласных букв.
+//3**.  Write a function that takes a word as input. The task of the function is to calculate and output to the console how many vowels and how many consonants are in the word.
 //e.g. function getWordStructure(word)
-//В консоли: 
+//In console: 
 //Слово (word) состоит из  (число) гласных и (число) согласных букв
 //Проверки: 'case', 'Case', 'Check-list'
 
