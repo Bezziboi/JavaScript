@@ -70,12 +70,10 @@ console.log(getWordStructure('Case'));
 console.log(getWordStructure('Check-list'));
 
 
-//4**. Написать функцию, которая проверяет, является ли слово палиндромом
+//4**. Write a function that checks if a word is a palindrome
 //e.g. function isPalindrom(word)
-//Проверки: 'abba', 'Abba'
+//Checks: 'abba', 'Abba'
 
-
-// первый вариант
 function isPalindrom_1(word) {
   let w = word.toLowerCase().replace(/[^a-zA-Z0-9]+/i)
 
@@ -88,18 +86,3 @@ function isPalindrom_1(word) {
 }
 console.log(isPalindrom_1('abba'));
 console.log(isPalindrom_1('Abba'));
-
-// //Второй вариант
-function isPalindrom_2(word) {
-  let w = word.toLowerCase().replace(/[^a-zA-Z0-9]+/i)
-  let len = w.length;
-  let mid = Math.floor(len / 2);
-
-  for (let i = 0; i < mid; i++) {
-    if (w[i] !== w[len - 1 - i]) {
-      return false;
-    }
-  } return true;
-}
-console.log(isPalindrom_2('abba'));
-console.log(isPalindrom_2('Abba'));
