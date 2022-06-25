@@ -16,8 +16,8 @@ function func(x) {
 func(6);
 }
 
-//2. Написать скрипт, который выведет 5 строк в консоль таким образом, чтобы в первой строчке выводилось :), во второй :):) и так далее
-//Пример в консоли:
+//2.Write a script that will print 5 lines to the console in such a way that :) is displayed on the first line, :) :) on the second line, and so on
+//Console example:
 //:)
 //:):)
 //:):):)
