@@ -77,8 +77,40 @@ function company() {
       }
       console.log(`${enterprises[i].name} (${summ} employees)`);
       for (let j = 0; j < enterprises[i].departments.length; j++) {
-        console.log(`  - ${enterprises[i].departments[j].name} (${enterprises[i].departments[j].employees_count} employees)`);
+        console.log(`   - ${enterprises[i].departments[j].name} (${enterprises[i].departments[j].employees_count} employees)`);
       };
     }
   }
   company();
+
+/* 2. Write a function that will take 1 argument (department id or department name and return the name of the enterprise to which it belongs).
+Example:
+getEnterpriseName(4) // Enterprise 1
+getEnterpriseName("Marketing Department") // Enterprise 2
+*/
+
+function getEnterpriseName(enName) {
+    for (let i = 0; i < enterprises.length; i++) {
+      for (let j = 0; j < enterprises[i].departments.length; j++) {
+        if (enName === enterprises[i].departments[j].id) {
+          console.log(enterprises[i].name);
+          break;
+        } else if (enName === enterprises[i].departments[j].name) {
+          console.log(enterprises[i].name);
+          break;
+        } else if (enName === enterprises[i].id || enName === enterprises[i].name) {
+          console.log('this is not a department');
+          break;
+        }
+      }
+    }
+  }
+  
+  getEnterpriseName('Testing department');
+  getEnterpriseName('Development department');
+  getEnterpriseName('Analytics Department');
+  getEnterpriseName('Enterprise 2');
+  getEnterpriseName(3);
+  getEnterpriseName(6);
+  getEnterpriseName(10);
+  getEnterpriseName(9)
