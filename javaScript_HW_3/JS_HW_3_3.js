@@ -1,53 +1,53 @@
 const enterprises = [
     {
       id: 1,
-      name: "Предприятие 1",
+      name: "Enterprise 1",
       departments: [
         {
           id: 2,
-          name: "Отдел тестирования",
+          name: "Testing department",
           employees_count: 10,
         },
         {
           id: 3,
-          name: "Отдел маркетинга",
+          name: "Marketing department",
           employees_count: 20,
         },
         {
           id: 4,
-          name: "Администрация",
+          name: "Administration",
           employees_count: 15,
         },
       ]
     },
     {
       id: 5,
-      name: "Предприятие 2",
+      name: "Enterprise 2",
       departments: [
         {
           id: 6,
-          name: "Отдел разработки",
+          name: "Development department",
           employees_count: 50,
         },
         {
           id: 7,
-          name: "Отдел маркетинга",
+          name: "Marketing department",
           employees_count: 20,
         },
         {
           id: 8,
-          name: "Отдел охраны труда",
+          name: "Labor protection department",
           employees_count: 5,
         },
       ]
     },
     {
       id: 9,
-      name: "Предприятие 3",
+      name: "Enterprise 3",
       departments: [
         {
           id: 10,
-          name: "Отдел аналитики",
+          name: "Analytics Department",
           employees_count: 0,
         },
       ]
@@ -77,7 +77,7 @@ function company() {
       }
       console.log(`${enterprises[i].name} (${summ} employees)`);
       for (let j = 0; j < enterprises[i].departments.length; j++) {
-        console.log(`- ${enterprises[i].departments[j].name} (${enterprises[i].departments[j].employees_count} employees)`);
+        console.log(`  - ${enterprises[i].departments[j].name} (${enterprises[i].departments[j].employees_count} employees)`);
       };
     }
   }
