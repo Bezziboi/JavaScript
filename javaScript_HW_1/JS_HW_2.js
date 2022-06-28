@@ -1,4 +1,3 @@
-console.log('1*============================================================')
 /*
 Create a variable "age_1" and assign the value 10 to it
 Create variable “age_2” and assign value 18 to it
@@ -37,7 +36,6 @@ checkAge1(18)
 checkAge1(61)
 checkAge1()
 
-console.log('2*============================================================')
 /*   .2*
 Convert assignment 1* so that the data type is checked first in the function 
 And if it is not a number, an error was thrown
@@ -67,7 +65,6 @@ const checkAge2 = function(age){
     checkAge2(61)       
 
 
-    console.log('3*============================================================')
     /*    .3*
 Convert 2* so the value '2' (the string containing ONLY a NUMBER) 
 was skipped when converted to a number
