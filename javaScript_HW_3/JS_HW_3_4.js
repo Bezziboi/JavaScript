@@ -82,14 +82,28 @@ When it is called, a list of company departments should be displayed in the cons
 indicating the number of employees and respecting the nesting of departments.
 */
 
-function companyDepartment(company, counter = "") {
+// function companyDepartment(company, counter = "") {
+//     company.forEach(data => {
+//       console.log(`${counter}${counter === "" ? "" : " "}${data.name} (${data.users_count})`);
+//       if (data.children) {
+//         counter += '--';
+//         companyDepartment(data.children, counter);
+//         counter = counter.slice(0, -2);
+//       }
+//     })
+//   }
+//   companyDepartment(company);
+
+function companyDepartment(company, func) {
     company.forEach(data => {
-      console.log(`${counter}${counter === "" ? "" : " "}${data.name} (${data.users_count})`);
-      if (data.children) {
-        counter += '--';
-        companyDepartment(data.children, counter);
-        counter = counter.slice(0, -2);
-      }
+      func(data);
+      data.children && companyDepartment(data.children, func);
     })
   }
-  companyDepartment(company);
+  
+  companyDepartment(company, node => {
+    let i = "-";
+    node.parent != null ?
+      console.log(`${i.repeat(node.parent)} ${node.name}(${node.users_count})`) :
+      console.log(`${node.name}(${node.users_count})`);
+  })
