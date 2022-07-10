@@ -1020,23 +1020,23 @@
 
 
 
-class Car {
+// class Car {
     
-    static numberOfCars = 0;
+//     static numberOfCars = 0;
     
-    constructor(model) {
-        this.model = model;
-        Car.numberOfCars += 1;
-    }
-    static race() {
-        console.log("3...2...1...GO!");
-    }
-}
+//     constructor(model) {
+//         this.model = model;
+//         Car.numberOfCars += 1;
+//     }
+//     static race() {
+//         console.log("3...2...1...GO!");
+//     }
+// }
 
-const car1= new Car("Mustang");
-const car2= new Car("Corvette");
-const car3= new Car("BMW");
-const car4= new Car("Ferrari");
+// const car1= new Car("Mustang");
+// const car2= new Car("Corvette");
+// const car3= new Car("BMW");
+// const car4= new Car("Ferrari");
 
-console.log(Car.numberOfCars);
-Car.race();
+// console.log(Car.numberOfCars);
+// Car.race();
