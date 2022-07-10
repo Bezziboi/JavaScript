@@ -1083,3 +1083,7 @@ class Hawk extends Animal {
         console.log(`This ${this.name} is flying`);
     }
 }
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+const hawk = new Hawk();
