@@ -1052,7 +1052,7 @@
 
 class Rabbit {
     alive = true;
-    name = "Rabbit"
+    name = "rabbit"
 
     eat() {
         console.log(`This ${this.name} is eating`);
@@ -1062,5 +1062,33 @@ class Rabbit {
     }
     run() {
         console.log(`This ${this.name} is running`);
+    }
+}
+class Fish {
+    alive = true;
+    name = "fish"
+
+    eat() {
+        console.log(`This ${this.name} is eating`);
+    }
+    sleep() {
+        console.log(`This ${this.name} is sleeping`);
+    }
+    swim() {
+        console.log(`This ${this.name} is swimming`);
+    }
+}
+class Hawk {
+    alive = true;
+    name = "hawk"
+
+    eat() {
+        console.log(`This ${this.name} is eating`);
+    }
+    sleep() {
+        console.log(`This ${this.name} is sleeping`);
+    }
+    fly() {
+        console.log(`This ${this.name} is flying`);
     }
 }
