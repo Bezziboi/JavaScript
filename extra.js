@@ -1049,3 +1049,18 @@
 
 
 
+
+class Rabbit {
+    alive = true;
+    name = "Rabbit"
+
+    eat() {
+        console.log(`This ${this.name} is eating`);
+    }
+    sleep() {
+        console.log(`This ${this.name} is sleeping`);
+    }
+    run() {
+        console.log(`This ${this.name} is running`);
+    }
+}
