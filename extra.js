@@ -1050,9 +1050,10 @@
 
 
 
-class Rabbit {
+
+
+class Animal {
     alive = true;
-    name = "rabbit"
 
     eat() {
         console.log(`This ${this.name} is eating`);
@@ -1060,34 +1061,24 @@ class Rabbit {
     sleep() {
         console.log(`This ${this.name} is sleeping`);
     }
+}
+class Rabbit extends Animal {
+    name = "rabbit"
+
     run() {
         console.log(`This ${this.name} is running`);
     }
 }
-class Fish {
-    alive = true;
+class Fish extends Animal {
     name = "fish"
 
-    eat() {
-        console.log(`This ${this.name} is eating`);
-    }
-    sleep() {
-        console.log(`This ${this.name} is sleeping`);
-    }
     swim() {
         console.log(`This ${this.name} is swimming`);
     }
 }
-class Hawk {
-    alive = true;
+class Hawk extends Animal {
     name = "hawk"
 
-    eat() {
-        console.log(`This ${this.name} is eating`);
-    }
-    sleep() {
-        console.log(`This ${this.name} is sleeping`);
-    }
     fly() {
         console.log(`This ${this.name} is flying`);
     }
