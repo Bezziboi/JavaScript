@@ -1224,34 +1224,34 @@
 
 
 
-class Car {
-    constructor(model , year, color) {
-        this.model = model;
-        this.year = year;
-        this.color = color;
-    }
-    drive() {
-        console.log(`You drive the ${this.model}`);
-    }
-}
+// class Car {
+//     constructor(model , year, color) {
+//         this.model = model;
+//         this.year = year;
+//         this.color = color;
+//     }
+//     drive() {
+//         console.log(`You drive the ${this.model}`);
+//     }
+// }
 
-const car1 = new Car("Mustang", 2010, "white");
-const car2 = new Car("Corvette", 2020, "blue");
-const car3 = new Car("Lambo", 2022, "yellow");
-const car4 = new Car("Ferrari", 2012, "red");
+// const car1 = new Car("Mustang", 2010, "white");
+// const car2 = new Car("Corvette", 2020, "blue");
+// const car3 = new Car("Lambo", 2022, "yellow");
+// const car4 = new Car("Ferrari", 2012, "red");
 
-const cars = [car1, car2, car3, car4];
+// const cars = [car1, car2, car3, car4];
 
-console.log(cars[0].model);
-console.log(cars[0].year);
-console.log(cars[0].color);
-startRace(cars);
+// console.log(cars[0].model);
+// console.log(cars[0].year);
+// console.log(cars[0].color);
+// startRace(cars);
 
-function startRace(cars) {
-    for(let car of cars) {
-        car.drive();
-    }
-}
+// function startRace(cars) {
+//     for(let car of cars) {
+//         car.drive();
+//     }
+// }
 
 
 
