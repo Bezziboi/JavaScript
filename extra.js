@@ -1298,3 +1298,159 @@
 
 
 
+// try {
+//     let x = window.prompt("Enter a #");
+//     x = Number(x);
+    
+//     if(isNaN(x)) throw console.log("That wasn't a number");
+//     if(x == "") throw console.log("That was empty");
+
+//     console.log(`${x} is a number`);
+//     console.g();                                             //
+// }
+// catch(error) {                                               //
+//     console.log("at 1309 - 'console.g();' is error");        //
+// }
+// finally {
+//     console.log("This always executes");
+// }
+
+
+
+
+
+
+// let item = "cryptocurency";
+// let price = 423.76;
+
+// let timer1 = setTimeout(firstMessage, 5000, item, price);  //setTimeout(x, milliseconds, arguments);
+// let timer2 = setTimeout(secondMessage, 10000);
+// let timer3 = setTimeout(thirdMessage, 15000);
+
+// function firstMessage(item, price) {
+//     alert(`Buy this ${item} for ${price} !!!`);
+// }
+
+// function secondMessage() {
+//     alert('This is not a scam!!!');
+// }
+
+// function thirdMessage() {
+//     alert('DO IT !!!');
+// }
+// document.getElementById("clearTimeout").onclick = function() {
+//     clearTimeout(timer1);
+//     clearTimeout(timer2);
+//     clearTimeout(timer3);
+//     alert('Thanks for buying!))');
+// }
+
+
+
+
+
+
+
+
+
+
+
+// let count = 0;
+// let max = window.prompt("Count up to what # ?");
+// max = Number(max);
+
+// const myTimer = setInterval(countUp);
+
+// function countUp() {
+//     count += 1;
+//     console.log(count);
+//     if(count >= max) {
+//         clearInterval(myTimer)
+//     }
+// }
+
+
+
+
+
+
+
+
+
+// let date = new Date();
+
+// let year = date.getFullYear();
+// let month = date.getMonth();
+// let dayOfMonth = date.getDate();
+// let dayOfWeek = date.getDay();
+// let hour = date.getHours();
+// let minutes = date.getMinutes();
+// let seconds = date.getSeconds();
+// let milliSeconds = date.getMilliseconds();
+
+// date.setFullYear(2000);
+// date.setMonth(8);
+// date.setDate(14);
+// date.setHours(24);
+// date.setMinutes(30);
+// date.setSeconds(20);
+// date.setMilliseconds(120);
+
+// date = date.toLocaleString();
+
+// console.log(formatDate(date));
+// console.log(formatTime(date));
+
+// function formatDate(date) {
+//     let year = date.getFullYear();
+//     let month = date.getMonth() + 1;
+//     let dayOfMonth = date.getDate();
+//     return `${dayOfMonth}/${month}/${year}`
+// }
+// function formatTime(date) {
+//     let hour = date.getHours();
+//     let minutes = date.getMinutes(); 
+//     let seconds = date.getSeconds();
+//     let amOrPm = hour >= 12 ? "pm" : "am";
+
+//     hour = (hour % 12) || 12;
+
+//     return `${hour}:${minutes}:${seconds} ${amOrPm}`;
+// }
+
+
+
+
+
+
+
+
+
+const myLabel = document.getElementById("myLabel");
+
+update();
+setInterval(update, 1000);
+
+function update() {
+    let date = new Date;
+    myLabel.innerHTML = formateDate(date);
+
+    function formateDate(date) {
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let amOrPm = hours >= 12 ? "pm" : "am";
+
+        hours = (hours % 12) || 12;
+
+        hours = formatZeroes(hours);
+        minutes = formatZeroes(minutes);
+        seconds = formatZeroes(seconds);
+
+        return `${hours}:${minutes}:${seconds} ${amOrPm}`;
+    }
+    function formatZeroes(time) {
+        time = time.toString();
+        return time.length < 2 ? "0" + time : time;
+    }
+}
