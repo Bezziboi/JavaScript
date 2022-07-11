@@ -1140,3 +1140,131 @@
 // console.log(rabbit.name);
 // console.log(rabbit.age);
 // console.log(rabbit.runSpeed);
+
+
+
+
+
+
+
+
+
+
+// class Car {
+
+//     constructor(power) {
+//         this._gas = 30;
+//         this._power = power;
+//     }
+//     get power() {
+//         return `${this._power}hp`
+//     }
+//     get gas() {
+//         return `${this._gas}L (${this._gas / 60 * 100}%)`
+//     }
+//     set gas(value) {
+//         if(value > 60) {
+//             value = 60;
+//         }
+//         else if(value < 0) {
+//             value = 0;
+//         }
+//         this._gas = value;
+//     }
+
+// }
+
+// const car = new Car(260);
+
+// car.gas = 1000000;
+
+// console.log(car.power);
+// console.log(car.gas);
+
+
+
+
+
+
+
+
+
+// class Car {
+//     constructor(model , year, color) {
+//         this.model = model;
+//         this.year = year;
+//         this.color = color;
+//     }
+// }
+
+// const car1 = new Car("Mustang", 2010, "red");
+// const car2 = new Car("Corvette", 2020, "blue");
+// const car3 = new Car("Lambo", 2022, "yellow");
+
+// changeColor(car2, "black");
+// checkInfo(car2);
+
+// function checkInfo(car) {
+//     console.log(car.model);
+//     console.log(car.year);
+//     console.log(car.color);
+// }
+// function changeColor(car, color) {
+//     car.color = color;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+class Car {
+    constructor(model , year, color) {
+        this.model = model;
+        this.year = year;
+        this.color = color;
+    }
+    drive() {
+        console.log(`You drive the ${this.model}`);
+    }
+}
+
+const car1 = new Car("Mustang", 2010, "white");
+const car2 = new Car("Corvette", 2020, "blue");
+const car3 = new Car("Lambo", 2022, "yellow");
+const car4 = new Car("Ferrari", 2012, "red");
+
+const cars = [car1, car2, car3, car4];
+
+console.log(cars[0].model);
+console.log(cars[0].year);
+console.log(cars[0].color);
+startRace(cars);
+
+function startRace(cars) {
+    for(let car of cars) {
+        car.drive();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
