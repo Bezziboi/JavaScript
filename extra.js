@@ -1426,31 +1426,153 @@
 
 
 
-const myLabel = document.getElementById("myLabel");
+// const myLabel = document.getElementById("myLabel");
 
-update();
-setInterval(update, 1000);
+// update();
+// setInterval(update, 1000);
 
-function update() {
-    let date = new Date;
-    myLabel.innerHTML = formateDate(date);
+// function update() {
+//     let date = new Date;
+//     myLabel.innerHTML = formateDate(date);
 
-    function formateDate(date) {
-        let hours = date.getHours();
-        let minutes = date.getMinutes();
-        let seconds = date.getSeconds();
-        let amOrPm = hours >= 12 ? "pm" : "am";
+//     function formateDate(date) {
+//         let hours = date.getHours();
+//         let minutes = date.getMinutes();
+//         let seconds = date.getSeconds();
+//         let amOrPm = hours >= 12 ? "pm" : "am";
 
-        hours = (hours % 12) || 12;
+//         hours = (hours % 12) || 12;
 
-        hours = formatZeroes(hours);
-        minutes = formatZeroes(minutes);
-        seconds = formatZeroes(seconds);
+//         hours = formatZeroes(hours);
+//         minutes = formatZeroes(minutes);
+//         seconds = formatZeroes(seconds);
 
-        return `${hours}:${minutes}:${seconds} ${amOrPm}`;
-    }
-    function formatZeroes(time) {
-        time = time.toString();
-        return time.length < 2 ? "0" + time : time;
-    }
-}
+//         return `${hours}:${minutes}:${seconds} ${amOrPm}`;
+//     }
+//     function formatZeroes(time) {
+//         time = time.toString();
+//         return time.length < 2 ? "0" + time : time;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+// console.time("Response time");     //start
+
+// console.timeEnd("Response time");  //end
+
+
+
+
+
+
+
+
+
+
+// const promise = new Promise((resolve, reject) => {
+//     let fileLoaded = false;
+   
+//     if(fileLoaded) {
+//         resolve (console.log("File loaded"));
+//     }
+//     else {
+//         reject (console.log("File NOT loaded"));
+//     }
+// })
+
+// promise.then(value => console.log(value))
+//        .catch(error => console.log(error));
+
+
+// const wait = time => new Promise(resolve => {
+//     setTimeout(resolve, time);
+// })
+
+// wait(3000).then(() => console.log("Thanks for waiting!"));
+
+
+
+
+
+
+
+
+
+
+// async function loadFile() {
+    
+//     let fileLoaded = true;
+
+//     if(fileLoaded) {
+//         return "File loaded";
+//     }
+//     else {
+//         throw "File NOT loaded";
+//     }
+// }
+
+
+// loadFile().then(value => console.log(value))
+//           .catch(error => console.log(error));
+
+
+
+
+
+
+
+
+
+
+// async function loadFile() {
+    
+//     let fileLoaded = false;
+
+//     if(fileLoaded) {
+//         return "File loaded";
+//     }
+//     else {
+//         throw "File NOT loaded";
+//     }
+// }
+
+// async function startProcess() {
+//     try {
+//         let message = await loadFile(); 
+//         console.log(message);
+//     }
+//     catch(error) {
+//         console.log(error);
+//     }
+// }
+
+// startProcess();
+
+
+
+
+
+
+
+
+
+
+
+// import {things to import from another file} from "file name";
+// import * as importName from "file name";
+
+
+
+
+
+
+
+
