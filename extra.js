@@ -1576,3 +1576,129 @@
 
 
 
+// console.log(document);
+// console.dir(document);
+// console.log(document.title);
+// console.log(document.URL);
+// document.title = "Title goes here!"
+// document.location = "https://www.google.com"
+// document.body.style.backgroundColor = "skyblue";
+
+
+
+
+
+
+
+
+
+
+// let element = document.getElementById("myTitle");
+// element.style.backgroundColor = "skyblue";
+
+// let fruits = document.getElementsByName("fruits");
+// fruits.forEach(fruit => {
+//     if(fruit.checked) {
+//         console.log(fruit.value);
+//     }
+// })
+
+// let vegetables = document.getElementsByTagName("li");
+// vegetables[1].style.backgroundColor = "skyblue"
+
+
+// let desserts = document.querySelectorAll(".desserts");
+// desserts.forEach(element => {
+//     element.style.backgroundColor = "skyblue";
+// })
+
+
+
+
+
+
+
+
+
+// const nameTag = document.createElement("h1");
+// nameTag.textContent = window.prompt("Enter your name"); 
+// document.body.append(nameTag);
+
+// const myList = document.querySelector("#fruit");
+// const listItem = document.createElement("li");
+// listItem.textContent = "mango";
+// myList.append(listItem);
+// myList.prepend(listItem);
+// myList.insertBefore(listItem, myList.getElementsByTagName("li")[1]);
+
+
+
+
+
+
+
+
+
+
+
+// const myTitle = document.querySelector("#myTitle");
+
+// myTitle.style.backgroundColor = "#222";
+// myTitle.style.color = "rgb(50, 200, 250)";
+// myTitle.style.fontFamily = "consolas";
+// myTitle.style.textAlign = "center";
+// myTitle.style.borderRadius = "9px";
+
+
+
+
+
+
+
+
+// const element = document.getElementById("myBtn");
+// const element = document.body;
+// const element = document.getElementById("myText");
+// const element = document.getElementById("myDiv");
+
+// element.onclick = doSomeThing;
+// element.onload = doSomeThing;
+// element.onchange = doSomeThing;
+// element.onmouseover = doSomeThing;
+// element.onmouseout = doSomeThingElse;
+// element.onmousedown = doSomeThing;
+// element.onmouseup = doSomeThingElse;
+
+// function doSomeThing() {
+//     // alert ("You did something!");
+//     element.style.backgroundColor = "lightgreen";
+// }
+// function doSomeThingElse() {
+//     // alert ("You did something!");
+//     element.style.backgroundColor = "skyblue";
+// }
+
+
+
+
+
+
+
+
+
+
+// const myBtn = document.getElementById("myBtn");
+// const element = document.getElementById("myDiv");
+// element.style.backgroundColor = "skyblue";
+// element.style.width = "400px";
+// element.style.height = "200px";
+// element.style.visibility = "hidden";
+
+// myBtn.addEventListener("click", () => {
+//     if(element.style.visibility == "hidden"){
+//         element.style.visibility = "visible";
+//     }
+//     else {
+//         element.style.visibility = "hidden";
+//     }
+// })
