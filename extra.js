@@ -1702,3 +1702,128 @@
 //         element.style.visibility = "hidden";
 //     }
 // })
+
+
+
+
+
+
+
+
+
+
+
+
+// window.addEventListener("keydown", event => console.log(event.key));
+
+
+// const myDiv = document.querySelector(".myDiv");
+// window.addEventListener("keydown", move);
+// let x = 0;
+// let y = 0;
+
+// function move(event) {
+
+//     switch(event.key) {
+//         case "ArrowDown":
+//         y+=10;
+//         myDiv.style.top = y + "px";
+//         break;
+//         case "ArrowUp":
+//         y-=10;
+//         myDiv.style.top = y + "px";
+//         break;
+//         case "ArrowLeft":
+//         x+=10;
+//         myDiv.style.right = x + "px";
+//         break;
+//         case "ArrowRight":
+//         x-=10;
+//         myDiv.style.right = x + "px";
+//         default:
+//         break;
+//     }
+//     }
+
+
+
+
+
+
+
+
+
+
+// console.dir(window);
+// console.log(window.innerWidth);
+// console.log(window.innerHeight);
+// console.log(window.scrollX);
+// console.log(window.scrollY);
+
+// console.log(window.location.href);
+// console.log(window.location.hostname);
+// console.log(window.location.pathname);
+
+// const myBtn = document.querySelector("#myBtn");
+
+// myBtn.addEventListener("click", () => window.open());
+// myBtn.addEventListener("click", () => window.close());
+// myBtn.addEventListener("click", () => window.print());
+
+// window.alert("Hello!");
+// window.confirm("Press OK to continue!");
+
+// let age = window.prompt("Enter your age");
+// if(age < 18) {
+//     window.alert("You must be 18+ to visit this site!");
+//     window.close();
+// }
+
+
+
+
+
+
+
+
+
+// document.cookie = "firstName=Spongebob; expires=Sun, 1 January 2023 12:00:00 UTC; path=/";
+// document.cookie = "lastName=Squarepants; expires=Sun, 1 January 2023 12:00:00 UTC; path=/";
+// console.log(document.cookie);
+
+// const firstText = document.querySelector("#firstText");
+// const lastText = document.querySelector("#lastText");
+// const submitBtn = document.querySelector("#submitBtn");
+// const cookieBtn = document.querySelector("#cookieBtn");
+
+// submitBtn.addEventListener("click", () => {
+//     setCookie("firstName", firstText.value, 365);
+//     setCookie("lastName", lastText.value, 365);
+// });
+
+// cookieBtn.addEventListener("click", () => {
+//     firstText.value = getCookie("firstName");
+//     lastText.value = getCookie("lastName");
+// })
+
+// function setCookie(name, value, daysToLive) {
+//     const date = new Date();
+//     date.setTime(date.getTime() + (daysToLive * 24 * 60 * 60 * 1000));
+//     let expires = "expires=" + date.toUTCString();
+//     document.cookie = `${name}=${value}; ${expires}; path=/`
+// }
+// function deleteCookie(name) {
+//     setCookie(name, null, null);
+// }
+// function getCookie(name) {
+//     const cDecoded = decodeURIComponent(document.cookie);
+//     const cArray = cDecoded.split("; ");
+//     let result = null;
+
+//     cArray.forEach(element => {
+//         if(element.indexOf(name) == 0) {
+//             result = element.substring(name.length + 1);
+//         }
+//     })
+//     return result;
+// }
